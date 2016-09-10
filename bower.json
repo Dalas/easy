@@ -1,0 +1,19 @@
+{
+  "name": "Easy",
+  "authors": [
+    "dalas"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.1"
+  }
+}
