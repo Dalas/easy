@@ -3,11 +3,16 @@
  */
 require.config({
     shim: {
-        "bower_components/jquery/dist/jquery.min": ["jquery"]
+        "angular": {
+            exports: 'angular'
+        }
     },
     paths: {
+        "angular": "bower_components/angular/angular",
 
+        // application
+        "app": "app"
     }
 });
 
-requirejs(['main']);
+requirejs(['app']);
