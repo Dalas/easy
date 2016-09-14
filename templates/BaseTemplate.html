@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script data-main="../static/js/main" src="../static/js/bower_components/requirejs/require.js"></script>
+    <script data-main="/static/js/main" src="/static/js/bower_components/requirejs/require.js"></script>
+    <script>
+        requirejs(['main'], function(){
+            requirejs(['homePage']);
+        })
+    </script>
 </head>
 <body>
     asd
+
 </body>
 </html>

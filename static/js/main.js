@@ -11,8 +11,6 @@ require.config({
         "angular": "bower_components/angular/angular",
 
         // application
-        "app": "app"
+        "homePage": "application/contollers/homePage"
     }
 });
-
-requirejs(['app']);
