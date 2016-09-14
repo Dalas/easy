@@ -1,5 +1,5 @@
 define(["angular"],
     function(ng) {
-        console.log(ng)
+        console.log(ng);
     }
 );
