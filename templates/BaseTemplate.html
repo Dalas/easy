@@ -5,12 +5,10 @@
     <title>Title</title>
     <link href="/static/js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/main.css" rel="stylesheet">
-    <script data-main="/static/js/main" src="/static/js/bower_components/requirejs/require.js"></script>
     <script>
-        requirejs(['main'], function(){
-            requirejs(['bootstrap', {% block require_scripts %}{% end %}]);
-        })
+        var modules = ['bootstrap', {% block require_scripts %}{% end %}];
     </script>
+    <script data-main="/static/js/main" src="/static/js/bower_components/requirejs/require.js"></script>
 </head>
 <body ng-app="Application">
     <header class="col-sm-12 bg-color-primary f-color-white">

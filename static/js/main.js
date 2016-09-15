@@ -23,3 +23,9 @@ require.config({
         "homePage": "application/contollers/homePage"
     }
 });
+
+require(['angular'], function(ng){
+    ng.module('Application', []);
+
+    require(modules)
+});
