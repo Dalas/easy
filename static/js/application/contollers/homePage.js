@@ -1,5 +1,6 @@
-define(["angular"],
+define(["angular", "angular-modals"],
     function(ng) {
-        console.log(ng);
+        ng.module('Application', ['angularModalService'])
+            .controller('AuthController', ['$scope', 'ModalService', function($scope, ModalService){}])
     }
 );

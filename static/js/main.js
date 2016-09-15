@@ -6,12 +6,16 @@ require.config({
         "angular": {
             exports: 'angular'
         },
+        "angular-modals": {
+            deps: ['angular']
+        },
         "bootstrap": {
             deps: ['jquery']
         }
     },
     paths: {
         "angular": "bower_components/angular/angular",
+        "angular-modals": "bower_components/angular-modal-service/dst/angular-modal-service.min",
         "jquery": "bower_components/jquery/dist/jquery.min",
         "bootstrap": "bower_components/bootstrap/dist/js/bootstrap.min",
 

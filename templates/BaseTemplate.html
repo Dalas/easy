@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="/static/js/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
     <script data-main="/static/js/main" src="/static/js/bower_components/requirejs/require.js"></script>
     <script>
         requirejs(['main'], function(){
@@ -11,8 +12,16 @@
         })
     </script>
 </head>
-<body>
-    {% block content %}
-    {% end %}
+<body ng-app="Application">
+    <header class="col-sm-12 bg-color-primary f-color-white">
+        <h1>Example page header</h1>
+    </header>
+    <div>
+        {% block content %}
+        {% end %}
+    </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
