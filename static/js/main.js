@@ -20,7 +20,8 @@ require.config({
         "bootstrap": "bower_components/bootstrap/dist/js/bootstrap.min",
 
         // application
-        "homePage": "application/contollers/homePage"
+        "LoginController": "application/controllers/Login/Login",
+        "RegistrationController": "application/controllers/Registration/Registration"
     }
 });
 
