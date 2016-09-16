@@ -1211,7 +1211,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 h1 small,
@@ -3967,11 +3967,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
   padding: 10px 15px;
 }
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
 .nav > li.disabled > a {
   color: #777777;
 }
@@ -3997,29 +3992,23 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
-}
 .nav-tabs > li {
-  float: left;
+  float: right;
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  color: #d5d5d4;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #ddd;
+  background-color: #009688;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
+  color: #ffffff;
+  background-color: #009688;
   cursor: default;
 }
 .nav-tabs.nav-justified {
@@ -4048,7 +4037,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
-  border-radius: 4px;
 }
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
@@ -4058,7 +4046,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
   }
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
@@ -4067,10 +4054,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .nav-pills > li {
-  float: left;
-}
-.nav-pills > li > a {
-  border-radius: 4px;
+  float: right;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4116,7 +4100,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs-justified > li > a {
   margin-right: 0;
-  border-radius: 4px;
 }
 .nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:hover,
@@ -4126,7 +4109,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
   }
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
@@ -6720,4 +6702,25 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.bg-color-primary {
+  background-color: #009688;
+}
+.bg-color-primary-dark {
+  background-color: #00796b;
+}
+.bg-color-accent {
+  background-color: #ff6e40;
+}
+.fn-color-primary {
+  color: #ffffff;
+}
+.fn-color-primary-dark {
+  color: #d5d5d4;
+}
+header {
+  padding: 15px;
+}
+.text-middle {
+  vertical-align: middle;
 }
