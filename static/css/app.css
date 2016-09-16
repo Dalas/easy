@@ -6719,7 +6719,10 @@ button.close {
   color: #d5d5d4;
 }
 header {
-  padding: 15px;
+  padding: 7.5px;
+}
+header .nav {
+  margin-top: 9px;
 }
 .text-middle {
   vertical-align: middle;
