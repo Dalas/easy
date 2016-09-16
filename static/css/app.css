@@ -6718,6 +6718,12 @@ button.close {
 .fn-color-primary-dark {
   color: #d5d5d4;
 }
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none !important;
+}
 header {
   padding: 7.5px;
 }

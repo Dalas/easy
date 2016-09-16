@@ -5,21 +5,29 @@
     <title>Title</title>
     <link href="/static/css/app.css" rel="stylesheet">
     <script>
-        var modules = ['bootstrap', 'LoginController', 'RegistrationController'{% block require_scripts %}{% end %}];
+        var modules = ['bootstrap', {% block require_scripts %}{% end %}];
     </script>
     <script data-main="/static/js/main" src="/static/js/bower_components/requirejs/require.js"></script>
 </head>
 <body ng-app="Application">
     <header class="col-sm-12 bg-color-primary-dark fn-color-primary">
-        <div class="col-sm-4">
-            <h1>DalasDev</h1>
-        </div>
-        <div class="col-sm-8">
-            <ul class="nav nav-tabs">
-                <li role="presentation"><a href="#">Messages</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-            </ul>
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-sm-4">
+                <h1>DalasDev</h1>
+            </div>
+            <div class="col-sm-8">
+                <ul class="nav nav-tabs">
+                    {% if user %}
+                        <li><a href="#">Logout</a></li>
+                    {% else %}
+                        <li><a href="#">SignUp</a></li>
+                        <li><a href="#">SignIn</a></li>
+                    {% end %}
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <div>
