@@ -1,2 +1,7 @@
 .idea/
 static/js/bower_components
+__pycache__/
+controllers/__pycache__/
+controllers/handlers/__pycache__/
+models/__pycache__/
+node_modules/
