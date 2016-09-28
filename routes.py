@@ -8,4 +8,5 @@ routes = [
 
     # web
     url(r'/', HomePageHandler, name='home'),
+    url(r'/sign-in', SignInPageHandler, name='home'),
 ]
