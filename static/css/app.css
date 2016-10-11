@@ -6681,13 +6681,3 @@ header .nav {
 .text-middle {
   vertical-align: middle;
 }
-.test-autoprefix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: red;
-}
-body {
-  background-color: red !important;
-  color: black !important;
-}
