@@ -18,7 +18,7 @@ def make_app():
 def main():
     app = make_app()
 
-    port=os.environ.get('PORT', 8888)
+    port = os.environ.get('PORT', 8888)
 
     app.listen(port)
     IOLoop.instance().start()
